@@ -9,9 +9,6 @@ import static java.nio.file.Files.probeContentType;
 
 public class FileUploader {
 
-
-
-
     public String getContentType(File file) {
         Path path = file.toPath();
         String contentType = null;
