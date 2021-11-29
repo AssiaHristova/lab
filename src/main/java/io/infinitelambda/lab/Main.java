@@ -10,7 +10,7 @@ public class Main {
             File file1 = new File(args[1]);
             String cloudProvider = args[0];
             String contentType1 = fileUploader.getContentType(file1);
-            if (cloudProvider.equals("S3")){
+            if (cloudProvider.equals("AWS S3")){
                 UploadResult result = FileUploader.uploadToS3(file1, contentType1);
             }
 
